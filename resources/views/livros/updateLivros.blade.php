@@ -11,14 +11,12 @@
 @include('layouts.header')
     <h1>Editar Livro</h1>
 
-    {{-- Mensagem de sucesso --}}
     @if(session('success'))
         <div style="color: green;">
             {{ session('success') }}
         </div>
     @endif
 
-    {{-- Exibir erros de validação --}}
     @if ($errors->any())
         <div style="color: red;">
             <ul>
@@ -26,6 +24,12 @@
                     <li>{{ $error }}</li>
                 @endforeach
             </ul>
+        </div>
+    @endif
+
+    @if(session('info'))
+        <div style="color: blue;">
+            {{ session('info') }}
         </div>
     @endif
 

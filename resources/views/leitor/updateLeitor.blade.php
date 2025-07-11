@@ -21,6 +21,12 @@
     </ul>
 @endif
 
+@if(session('info'))
+    <div style="color: blue;">
+        {{ session('info') }}
+    </div>
+@endif
+
 <form action="{{ url('/updateleitor/' . $formedit->id) }}" method="POST">
     @csrf
     @method('PUT')
@@ -47,5 +53,6 @@
 
     <button type="submit">Atualizar</button>
 </form>
+<script src="{{ asset('js/cpf.js') }}"></script>
 </body>
 </html>

@@ -21,6 +21,12 @@
     </ul>
 @endif
 
+@if(session('info'))
+    <div style="color: blue;">
+        {{ session('info') }}
+    </div>
+@endif
+
 <form action="{{ url('/createleitor') }}" method="POST">
     @csrf
 
@@ -46,5 +52,6 @@
 
     <button type="submit">Cadastrar</button>
 </form>
+<script src="{{ asset('js/cpf.js') }}"></script>
 </body>
 </html>

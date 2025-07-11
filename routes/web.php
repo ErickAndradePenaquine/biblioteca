@@ -23,5 +23,7 @@ Route::put('/updateleitor/{id}', [leitorController::class, 'update']);
 Route::delete('/deleteleitor/{id}', [leitorController::class, 'destroy']);
 
 Route::get('/listaremprestimo', [emprestimoController::class, 'index']);
+Route::get('/formcreatemprestimo', [emprestimoController::class, 'formcreate']);
 Route::post('/createmprestimo', [emprestimoController::class, 'store']);
-Route::put('/updatemprestimo', [emprestimoController::class, 'update']);
+Route::get('/formupdatemprestimo/{id}', [emprestimoController::class, 'formedit']);
+Route::put('/updatemprestimo/{id}', [emprestimoController::class, 'update']);

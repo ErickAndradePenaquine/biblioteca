@@ -1,0 +1,58 @@
+body {
+    background-color: #ccd0ed;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+th, td {
+    border: 1px solid #aaa;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #ddd;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.btn, .btn-editar, .btn-excluir, .btn:focus, .btn-editar:focus, .btn-excluir:focus {
+    display: inline-block;
+    padding: 5px 12px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 0.9em;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 1;
+    margin-right: 5px;
+    background: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-editar {
+    background-color: #4CAF50;
+}
+.btn-editar:hover {
+    background-color: #45a049;
+}
+.btn-excluir {
+    background-color: #e53935;
+}
+.btn-excluir:hover {
+    background-color: #c62828;
+}
+
+.btn-editar, .btn-excluir {
+    min-width: 70px;
+    width: auto;
+    text-align: center;
+}

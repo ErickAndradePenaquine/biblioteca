@@ -42,8 +42,7 @@ Exibir alertas de livros em atraso.
 
 1.Livro só pode ser emprestado se houver cópias disponíveis.
 2.Leitor só pode ter até 3 empréstimos ativos.
-3.A devolução atrasada deve exibir um alerta.
-4.O sistema deve calcular o número de cópias disponíveis a partir de quantidade_total - empréstimos_ativos.
+3.O sistema deve calcular o número de cópias disponíveis.
 
 --------------------------------------------------------------------------------------------
 
@@ -57,7 +56,7 @@ Exibir alertas de livros em atraso.
 
 --------------------------------------------------------------------------------------------
 
-🛠️ Extras opcionais (se quiser ir além)
+🛠️ Para planos futuros (se quiser ir além)
 
 1.Autenticação com login de administrador
 2.Exportar relatório em PDF dos livros em atraso
@@ -66,11 +65,15 @@ Exibir alertas de livros em atraso.
 
 --------------------------------------------------------------------------------------------
 
-🧰 Ferramentas que você está usando:
+🧰 Ferramentas para o projeto:
 
 1.Framework: Laravel
 2.Banco de Dados: MySQL via XAMPP (com phpMyAdmin)
-3.Frontend: Blade (telas padrão do Laravel)
+3.Backend: .php
+4.Frontend: .Blade.php (telas padrão do Laravel)
+5.Frontend: .Html
+6.Frontend: .Css
+7.Frontend: .Js
 
 --------------------------------------------------------------------------------------------
 
@@ -184,7 +187,40 @@ Exibir alertas de livros em atraso.
 
 
 # VIEWS BLADE:
-
+    app/
+    |
+    ├── Http/
+    |   └── Controllers/
+    |       └── livrosController.php
+    |       └── leitorController.php
+    |       └── emprestimoController.php
+    |
+    ├── Models/
+    |   └── LivrosModel.php
+    |   └── LeitorModel.php
+    |   └── EmprestimoModel.php
+    |   └── User.php
+    |    
+    public/
+    |
+    ├── css/
+    |   └── lists.css
+    |   └── forms.css
+    |
+    ├── js/
+    |   └── cpf.css
+    |
+    ├── telas/
+    |   └── TelaListLivros.png
+    |   └── TelaListLeitores.png
+    |   └── TelaListEmprestimos.png
+    |   └── TelaCreateLivros.png
+    |   └── TelaCreateLeitores.png
+    |   └── TelaCreateEmprestimos.png
+    |   └── TelaEditLivros.png
+    |   └── TelaEditLeitores.png
+    |   └── TelaEditEmprestimos.png
+    |
     resources/views/
     │
     ├── layouts/

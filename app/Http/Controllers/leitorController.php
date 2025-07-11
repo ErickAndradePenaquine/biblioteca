@@ -28,12 +28,12 @@ class leitorController extends Controller
         return redirect('/listleitor')->with('success', 'Leitor criado com sucesso!');
     }
 
-    public function formedit ($id){
+    public function formedit ($id){ 
         $formedit = LeitorModel::findOrFail($id);
         return view('leitor.updateLeitor', ['formedit' => $formedit]);
     }
 
-    public function update (Request $request, $id){
+    public function update (Request $request, $id){ 
         $request->validate([
             'nome' => 'required|max:50',
             'cpf' => ['required','regex:/^\d{3}\.\d{3}\.\d{3}\-\d{2}$/'],
